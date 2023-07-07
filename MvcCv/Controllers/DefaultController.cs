@@ -10,7 +10,6 @@ namespace MvcCv.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        //Ertuğrul
         DbCvEntities db = new DbCvEntities();
         public ActionResult Index()
         {
