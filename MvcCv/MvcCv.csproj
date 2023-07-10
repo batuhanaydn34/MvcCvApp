@@ -234,6 +234,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\Deneyim.cshtml" />
+    <Content Include="Views\Default\egitimlerim.cshtml" />
+    <Content Include="Views\Default\Yeteneklerim.cshtml" />
+    <Content Include="Views\Default\Sertifikalarım.cshtml" />
+    <Content Include="Views\Default\İletisim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
