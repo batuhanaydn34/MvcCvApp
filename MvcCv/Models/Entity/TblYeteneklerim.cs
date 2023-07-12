@@ -16,5 +16,6 @@ namespace MvcCv.Models.Entity
     {
         public int ID { get; set; }
         public string Yeteneklerim { get; set; }
+        public Nullable<byte> Oran { get; set; }
     }
 }
