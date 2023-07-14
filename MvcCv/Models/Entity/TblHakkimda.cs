@@ -20,7 +20,7 @@ namespace MvcCv.Models.Entity
         public string Adres { get; set; }
         public string Telefon { get; set; }
         public string Mail { get; set; }
-        public string Acikalama { get; set; }
         public string Fotoğraf { get; set; }
+        public string Aciklama { get; set; }
     }
 }

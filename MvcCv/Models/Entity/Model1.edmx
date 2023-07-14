@@ -44,7 +44,7 @@
           <Property Name="Adres" Type="varchar" MaxLength="200" />
           <Property Name="Telefon" Type="varchar" MaxLength="200" />
           <Property Name="Mail" Type="varchar" MaxLength="150" />
-          <Property Name="Acikalama" Type="varchar(max)" />
+          <Property Name="Aciklama" Type="varchar(max)" />
           <Property Name="Fotoğraf" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="TblHobilerim">
@@ -71,6 +71,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tarih" Type="varchar" MaxLength="30" />
           <Property Name="Aciklama" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="TblYeteneklerim">
@@ -134,8 +135,8 @@
           <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="Telefon" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="Mail" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
-          <Property Name="Acikalama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Fotoğraf" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblHobilerim">
           <Key>
@@ -162,6 +163,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Tarih" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblYeteneklerim">
           <Key>
@@ -222,13 +224,13 @@
           <EntitySetMapping Name="TblHakkimda">
             <EntityTypeMapping TypeName="DbCvModel.TblHakkimda">
               <MappingFragment StoreEntitySet="TblHakkimda">
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />
                 <ScalarProperty Name="Adres" ColumnName="Adres" />
                 <ScalarProperty Name="Telefon" ColumnName="Telefon" />
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
-                <ScalarProperty Name="Acikalama" ColumnName="Acikalama" />
                 <ScalarProperty Name="Fotoğraf" ColumnName="Fotoğraf" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -257,6 +259,7 @@
           <EntitySetMapping Name="TblSertifikalarim">
             <EntityTypeMapping TypeName="DbCvModel.TblSertifikalarim">
               <MappingFragment StoreEntitySet="TblSertifikalarim">
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
               </MappingFragment>
